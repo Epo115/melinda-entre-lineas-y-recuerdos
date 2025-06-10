@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mi Autobiografía</title>
+
+  <!-- Fuente decorativa -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Dancing Script', cursive;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #ffe4e1, #fff0f5);
+      color: #333;
+    }
+
+    header {
+      background-color: #f8bbd0;
+      color: #6b0f1a;
+      padding: 40px;
+      text-align: center;
+      font-size: 3em;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-bottom: 5px dotted #f48fb1;
+    }
+
+    .container {
+      padding: 40px;
+      max-width: 900px;
+      margin: 30px auto;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 25px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      animation: fadeIn 1.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .foto-decorada {
+      display: block;
+      margin: 30px auto;
+      max-width: 250px;
+      border-radius: 20px;
+      border: 8px double #c2185b;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      background-color: #fff0f5;
+      padding: 5px;
+      transition: transform 0.3s;
+    }
+
+    .foto-decorada:hover {
+      transform: scale(1.05);
+    }
+
+    h2 {
+      color: #c2185b;
+      font-size: 2em;
+      border-bottom: 2px dashed #f8bbd0;
+      padding-bottom: 5px;
+      margin-top: 40px;
+      position: relative;
+    }
+
+    h2::before {
+      content: "❀";
+      position: absolute;
+      left: -30px;
+      color: #ec407a;
+    }
+
+    p {
+      font-size: 1.3em;
+      text-align: justify;
+    }
+
+    /* 🎵 Decoración del reproductor de música */
+    .audio-box {
+      background-color: #fff0f5;
+      border: 3px dashed #ec407a;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+      text-align: center;
+      font-size: 1.2em;
+      color: #880e4f;
+      animation: floatIn 1s ease-in-out;
+    }
+
+    @keyframes floatIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.9) translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    .audio-box audio {
+      margin-top: 15px;
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f8bbd0;
+      color: #6b0f1a;
+      font-size: 1.2em;
+      border-top: 5px dotted #f48fb1;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Entre lineas y recuerdos </h1>
+  </header>
+
+  <div class="container">
+    <img src="mifoto.jpg" alt="Foto personal" class="foto-decorada" />
+
+    <h2>Introducción</h2>
+    <p>Hola, mi nombre es Melinda Ariadna. Esta es la historia de mi vida, desde mis primeros días hasta el presente, incluyendo los momentos que me han formado como persona.</p>
+
+    <h2>Mi Infancia</h2>
+    <p>Nací el 17 de septiembre del 2007 en el Estado de México. Mi infancia estuvo llena de aventuras, aprendizajes y muchos recuerdos con mi familia y amigos.</p>
+
+    <h2>Educación y Logros</h2>
+    <p>Actualmente estoy estudiando en la escuela preparatoria 115 y estoy a nada de graduarme. He logrado muchas metas personales y he aprendido mucho a medida que curso la escuela.</p>
+
+    <h2>Gustos y Pasatiempos</h2>
+    <p>Me encanta la música, especialmente el género pop. En mi tiempo libre, suelo leer libros de romance, y salir con amigos o explorar nuevos lugares. También me apasiona el cine y las series, sobre todo las de suspenso o de amor. Igual me gusta pasar tiempo con mi perrita Lottie.</p>
+
+    <h2>Canción Favorita: "Can't Help Falling In Love"</h2>
+    <div class="audio-box">
+      <p>🌸 Una canción que me transmite muchas emociones:</p>
+      <audio controls>
+        <source src="Elvis Presley  Can't Help Falling In Love.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+      </audio>
+    </div>
+
+    <h2>Conclusión</h2>
+    <p>Esta es solo una pequeña parte de quién soy. A lo largo de los años he aprendido a valorar cada momento y seguir creciendo como ser humano.</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Mi Autobiografía | Diseñado con cariño por Melinda</p>
+  </footer>
+
+</body>
+</html>
